@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Phase;
+  src: url(./assets/fonts/Phase-AGX_28-38-71.ttf);
+}
+
+@font-face {
+  font-family: 'Shiny Muscle';
+  src: url('./assets/fonts/Shiny Muscle.ttf');
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 40px;
+  font-family: Phase;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#noise-blobs {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: wavy underline;
+}
+
+input {
+  font-family: 'Shiny Muscle';
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
