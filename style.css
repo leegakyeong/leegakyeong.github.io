@@ -8,11 +8,23 @@
   src: url('./assets/fonts/Shiny Muscle.ttf');
 }
 
+@media (orientation: portrait) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (orientation: landscape) {
+  main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 40px;
+  }
+}
+
 main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-left: 40px;
   font-family: Phase;
   z-index: 1;
 }

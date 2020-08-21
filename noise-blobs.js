@@ -1,5 +1,13 @@
 function setup() {
-  const canvas = createCanvas(400, 400);
+  const orientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+  let canvas;
+
+  if (orientation === 'landscape-primary' || orientation === 'landscape-secondary') {
+    canvas = createCanvas(400, 400);
+  } else { // android webview and ios safari does not support orientation api
+    canvas = createCanvas(screen.width, screen.width);
+  }
+
   canvas.id('noise-blobs');
 }
 
