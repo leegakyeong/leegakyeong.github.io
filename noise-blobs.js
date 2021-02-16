@@ -9,6 +9,7 @@ function setup() {
   }
 
   canvas.id('noise-blobs');
+  canvas.parent(document.body);
 }
 
 function draw() {
