@@ -9,26 +9,21 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
+
   <body>
-    <main>
-      <h1>Gakyeong Lee</h1>
-      <h2>Full-stack web developer</h2>
-      <a href="mailto:gakyunggg297@gmail.com">gakyunggg297@gmail.com</a>
-      <br />
-      <br />
-      <label for="typeface-tester">Type in something: </label>
-      <input type="text" name="typeface-tester" id="typeface-tester" />
-      <br />
-      <br />
-      <a href="https://github.com/leegakyeong">github</a>
-    </main>
-    <footer>
-      Typeface:<br />
-      <span style="font-family: Phase;">Phase (Elias Hanzer)</span><br />
-      <a href="https://www.notion.so/withhangul/7209c3b9367e4eca8b8aff1e55bc1a6d" style="font-family: Shiny Muscle;">Shiny Muscle (Gakyeong Lee)<a/>
-    </footer>
-    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
-    <script language="javascript" type="text/javascript" src="noise-blobs.js"></script>
+    <p>I like performance</p>
+    <div class="container">
+      <h1>I am a frontend developer<a href="/assets/이가경_CV_240625.pdf" target="_blank" rel="noopener noreferrer">CV<span>(in Korean)</span></a></h1>
+      <h2>and I like to <a href="https://www.doosanartcenter.com/ko/performance/1582" target="_blank" rel="noopener noreferrer">move</a></h2>
+    </div>
   </body>
+
+  <svg>
+    <defs>
+      <filter id="distortion">
+        <feTurbulence baseFrequency="0.01 0.01" numOctaves="1" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="R" />
+      </filter>
+    </defs>
+  </svg>
 </html>
